@@ -1,5 +1,8 @@
 from django.shortcuts import render
+from .forms import SearchForm
 
 
 def home(request):
-    return render(request, 'index.html')
+    form = SearchForm()
+    context = { 'form' : form }
+    return render(request, 'index.html', context)

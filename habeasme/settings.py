@@ -36,7 +36,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'habeasme.app',
+    'crispy_forms',
+    'app',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -87,3 +88,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
