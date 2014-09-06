@@ -1,4 +1,4 @@
-{% load i18n crispy_forms_tags %}
+{% load i18n crispy_forms_tags staticfiles %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,10 +7,10 @@
   <title>Habeas.me</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <link href="../../../static/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../../../static/css/style.css" rel="stylesheet">
-  <script type="text/javascript" src="../../../static/js/jquery.min.js"></script>
-  <script type="text/javascript" src="../../../static/js/bootstrap.min.js"></script>
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
 </head>
 
 <body>
@@ -18,8 +18,8 @@
   <div class="row clearfix">
     <div class="col-md-12 column">
       <div class="page-header">
-        <h1>
-          Example page header <small>Subtext for header</small>
+        <h1 class="text-center">
+          <img src="{% static 'img/logo.png' %}" alt="Logo" />
         </h1>
       </div>
       <ul class="nav nav-tabs">
